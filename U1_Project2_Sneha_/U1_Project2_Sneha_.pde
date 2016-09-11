@@ -75,7 +75,7 @@ void draw()
   { 
     fill (0, 200, 0); 
     ellipse(x1, x2, 0, 60); 
-    fill (236, 254, 100); 
+    fill (0, 254, 86); 
     ellipse(y1, y2, 0, 50); 
   }
  
@@ -105,9 +105,9 @@ void draw()
     
     if (ellipse2==true)
   {
-    fill (225,141,70);
+    fill (0,141,43);
     ellipse(x2,y2,3,50);
-    fill (76,229,110);
+    fill (96,202,0);
     ellipse(x1,y1,3,65);
     
   }
@@ -115,9 +115,9 @@ void draw()
   {
 
     fill(245,72,178);
-    ellipse(random(width),random(height),random(60, 80),random(60, 80));
+    ellipse(random(width),random(height),random(20, 30),random(40, 50));
     fill(54,205,245);
-    ellipse(random(width),random(height),random(80, 100),random(80, 100));
+    ellipse(random(width),random(height),random(80, 90),random(80, 90));
   }
   
     if (ellipse3==true)
@@ -132,9 +132,9 @@ void draw()
   {
 
     fill(252, 66, 252);
-    ellipse(random(width),random(height),random(30,50),random(30,50));
+    ellipse(random(width),random(height),random(5,10),random(5,10));
     fill(54,205,245);
-    ellipse(random(width),random(height),random(30,50),random(30,50));
+    ellipse(random(width),random(height),random(5,10),random(5,10));
  
   }
 }
@@ -151,7 +151,7 @@ void Boundaries ()
   
   if (x1 <= 0)
   {
-    speedx1 = 15;
+    speedx1 = 30;
   }
   
   if (y1 > height)
@@ -161,7 +161,7 @@ void Boundaries ()
   
   if (y1 <= 0)
   {
-    speedy1 = 20;
+    speedy1 = 40;
   }
   
   if (x2 > width)
@@ -171,7 +171,7 @@ void Boundaries ()
   
   if (x2 < 0)
   {
-    speedx2 = 7;
+    speedx2 = 20;
   }
   
   if (y2 > height)
@@ -181,7 +181,7 @@ void Boundaries ()
   
   if (y2 <= 0)
   {
-    speedy2 = 10;
+    speedy2 = 15;
   }
   
   
@@ -192,7 +192,7 @@ void Boundaries ()
   
   if (X2 < 0)
   {
-    speedX2 = 15;
+    speedX2 = 20;
   }
   
   if (Y2 > height)
@@ -202,7 +202,7 @@ void Boundaries ()
   
   if (Y2 <= 0)
   {
-    speedY2 = 20;
+    speedY2 = 25;
   }
 }
 
