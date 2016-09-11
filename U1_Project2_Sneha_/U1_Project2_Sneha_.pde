@@ -6,12 +6,12 @@ float X2 = 800;
 float Y2 = 300; 
 
 
-float speedx1 = 5;
-float speedx2 = -5;
-float speedy1 = 9;
-float speedy2 = -9;
-float speedX2 = 8;
-float speedY2 = -8; 
+float speedx1 = 15;
+float speedx2 = -15;
+float speedy1 = 20;
+float speedy2 = -20;
+float speedX2 = 30;
+float speedY2 = -30; 
 
 boolean collision = true;
 
@@ -34,12 +34,12 @@ void draw()
   x1 = x1 + speedx1;
   y1 = y1 + speedy1;
   
-  fill (250);
+  fill (230);
   ellipse (x2,y2,50,50);
   x2 = x2 + speedx2;
   y2 = y2 + speedy2;
   
-  fill (220);
+  fill (250);
   ellipse (X2,Y2,50,50);
   X2 = X2 + speedX2;
   Y2 = Y2 + speedY2;
@@ -63,7 +63,7 @@ void Boundaries ()
   
   if (x1 <= 0)
   {
-    speedx1 = 7;
+    speedx1 = 15;
   }
   
   if (y1 > height)
@@ -73,7 +73,7 @@ void Boundaries ()
   
   if (y1 <= 0)
   {
-    speedy1 = 4;
+    speedy1 = 20;
   }
   
   if (x2 > width)
@@ -93,7 +93,7 @@ void Boundaries ()
   
   if (y2 <= 0)
   {
-    speedy2 = 4;
+    speedy2 = 30;
   }
   
   
@@ -104,7 +104,7 @@ void Boundaries ()
   
   if (X2 < 0)
   {
-    speedX2 = 7;
+    speedX2 = 15;
   }
   
   if (Y2 > height)
@@ -114,7 +114,7 @@ void Boundaries ()
   
   if (Y2 <= 0)
   {
-    speedY2 = 4;
+    speedY2 = 20;
   }
 }
 
@@ -136,8 +136,12 @@ if(dist (x2, y2, X2, Y2) < 50)
   speedX2 = -speedX2; 
   speedY2 = -speedY2; 
   
+}
+
+
+
 
 
 
   }  
-}}
+}
